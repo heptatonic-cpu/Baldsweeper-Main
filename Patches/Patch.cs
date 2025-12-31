@@ -22,9 +22,6 @@ namespace BALDsweeper
 			standardMenuButton.highlightedSprite = BasePlugin.Assets.Get<Sprite>("ms_lit");
 			standardMenuButton.unhighlightedSprite = BasePlugin.Assets.Get<Sprite>("ms_unlit");
 			standardMenuButton.swapOnHigh = true;
-			standardMenuButton.transitionOnPress = true;
-			standardMenuButton.transitionTime = 0.0167f;
-			standardMenuButton.transitionType = UiTransition.Dither;
 			standardMenuButton.OnPress.AddListener(delegate()
 			{
 				Singleton<GlobalCam>.Instance.Transition(UiTransition.Dither, 0.01666667f);

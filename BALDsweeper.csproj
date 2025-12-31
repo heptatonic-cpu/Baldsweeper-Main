@@ -352,11 +352,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BasePlugin.cs" />
-    <Compile Include="CellType.cs" />
-    <Compile Include="GridCell.cs" />
-    <Compile Include="MinesweeperManager.cs" />
-    <Compile Include="Patch.cs" />
+    <Compile Include="Internal\CellType.cs" />
+    <Compile Include="Internal\GridCell.cs" />
+    <Compile Include="Internal\MinesweeperManager.cs" />
+    <Compile Include="Patches\Patch.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Internal" />
+    <Folder Include="Patches" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
