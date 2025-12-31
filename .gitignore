@@ -1,0 +1,32 @@
+## --- [ Visual Studio / .NET ] ---
+[Bb]in/
+[Oo]bj/
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## --- [ Game Files (CRITICAL) ] ---
+# Never commit the game's original DLLs or your local game install
+# Usually kept in a 'lib', 'references', or 'dependencies' folder
+/lib/*.dll
+/dependencies/*.dll
+/refs/*.dll
+!/lib/Placeholder.txt
+
+## --- [ BepInEx Specifics ] ---
+# Ignore generated documentation or cache folders
+LogOutput.log
+BepInEx/config/
+BepInEx/plugins/
+BepInEx/patchers/
+BepInEx/core/
+
+## --- [ User-Specific Build Config ] ---
+# If you use a 'Directory.Build.props' or similar to set your local game path
+*.user.props
+
+## --- [ OS Specific ] ---
+.DS_Store
+Thumbs.db
